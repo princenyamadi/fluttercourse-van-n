@@ -4,11 +4,22 @@ void main() {
   runApp(const MyApp());
 }
 
+void test() {
+  final name = 'Foo';
+
+  if (name == 'Foo') {
+    print('Yes this is foo');
+  } else {
+    print("no, this is not foo");
+  }
+}
+
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
+    test();
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
